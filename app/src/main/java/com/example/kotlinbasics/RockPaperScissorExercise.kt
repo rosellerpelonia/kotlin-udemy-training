@@ -7,7 +7,10 @@ fun main(){
         var playerChoice = ""
         println("Rock, Paper or Scissors? Enter your choice!")
         playerChoice = readln()
-
+        while (playerChoice != "Rock" && playerChoice != "Paper" && playerChoice != "Scissors"){
+            println("Incorrect choice for Rock, Paper or Scissors. Please try again")
+            playerChoice = readln()
+        }
         val randomNumber = (1..3).random()
         when (randomNumber) {
             1 -> {
@@ -34,10 +37,8 @@ fun main(){
 
         if (winner == "Tie") {
             println("Draw!")
-        } else if (winner == "Player") {
-            println("Player wins!")
-        } else {
-            println("Computer wins!")
+        } else{
+            println("$winner won!")
         }
         println("Do you want to play again? (yes/no)")
         val response = readln()
