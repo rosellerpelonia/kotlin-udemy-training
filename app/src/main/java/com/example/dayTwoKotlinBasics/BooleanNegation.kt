@@ -1,4 +1,4 @@
-package com.example.kotlinbasics
+package com.example.dayTwoKotlinBasics
 
 fun main(){
     val myTrue: Boolean = true

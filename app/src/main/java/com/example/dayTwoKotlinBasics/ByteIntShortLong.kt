@@ -1,4 +1,4 @@
-package com.example.kotlinbasics
+package com.example.dayTwoKotlinBasics
 
 fun main(){
     //myAge data type is int
