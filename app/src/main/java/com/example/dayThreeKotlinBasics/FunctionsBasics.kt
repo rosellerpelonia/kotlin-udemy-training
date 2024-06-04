@@ -1,6 +1,22 @@
 package com.example.dayThreeKotlinBasics
 
 fun main(){
+
+    println("Input your first number")
+    val num1 = readln().toInt()
+    println("Input your second number")
+    val num2 = readln().toInt()
+    val total = add(num1,num2)
+    println("Total: $total")
+}
+
+
+fun add (num1:Int,num2:Int):Int{
+    val result = num1+num2
+    return result
+}
+
+fun askCoffeeDetails(){
     println("Input sugar count")
     val sugarCount = readln().toInt()
     println("Input the name of the coffee owner")
