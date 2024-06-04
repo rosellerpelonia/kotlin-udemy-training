@@ -1,12 +1,14 @@
 package com.example.dayThreeKotlinBasics
 
-class Dog {
+//this is a property
+class Dog (val name : String, val breed: String, var age: Int = 0){
 
     init {
-        bark()
+        bark(name)
     }
 
-    private fun bark(){
-        println("woof woof")
+    //function with parameter
+    private fun bark(name: String) {
+        println("$name says woof woof")
     }
 }
