@@ -11,9 +11,21 @@ fun main(){
     shoppingList.add("Cooling System")
     shoppingList.remove("Graphics Card RTX 3060")
     shoppingList.add("Graphics Card RTX 4090")
-    println(shoppingList)
+
     shoppingList.removeAt(1)
-    println(shoppingList)
+
     shoppingList.add(3,"Core i9")
+
+    shoppingList[4] = "Graphics card 9000"
+
+    val hasRam = shoppingList.contains("SSD")
+
+    if(hasRam){
+        println("Has SSD in the list")
+    }else{
+        println("No ram in the list")
+    }
     println(shoppingList)
+
+
 }
