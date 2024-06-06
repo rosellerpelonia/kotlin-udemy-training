@@ -1,5 +1,7 @@
 package com.example.dayThreeKotlinBasics
 
+import android.annotation.SuppressLint
+
 
 data class CoffeeDetails(
     val sugarCount : Int,
@@ -10,6 +12,7 @@ data class CoffeeDetails(
 
 
 
+@SuppressLint("SuspiciousIndentation")
 fun main(){
  val coffeeForRuss = CoffeeDetails(0, "Russ", "xxl", 0)
     makeCoffee(coffeeForRuss)
