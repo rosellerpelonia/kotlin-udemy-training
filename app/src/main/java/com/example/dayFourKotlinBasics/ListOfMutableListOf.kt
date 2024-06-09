@@ -26,14 +26,9 @@ fun main(){
         println("No ram in the list")
     }
 
-    for(item in shoppingList){
-
-        println(item)
-        if(item == "Core i9") {
-            shoppingList.removeLast()
-            break
-        }
-
+    println(shoppingList.size)
+    for(index in 0 .. shoppingList.size){
+        println("item ${shoppingList[index]} is at index $index")
     }
     println(shoppingList)
 }
