@@ -25,7 +25,15 @@ fun main(){
     }else{
         println("No ram in the list")
     }
+
+    for(item in shoppingList){
+
+        println(item)
+        if(item == "Core i9") {
+            shoppingList.removeLast()
+            break
+        }
+
+    }
     println(shoppingList)
-
-
 }
