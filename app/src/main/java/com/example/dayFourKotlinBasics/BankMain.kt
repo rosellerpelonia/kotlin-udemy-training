@@ -2,12 +2,13 @@ package com.example.dayFourKotlinBasics
 
 fun main(){
 
-    val russBankAccount = BankAccount("Russ", 500.00)
+    val sarahBankAccount = BankAccount("Sarah", 0.0)
 
-    println(russBankAccount.accountHolder + " remaining balance: $" + russBankAccount.balance)
-    russBankAccount.deposit(200.5)
-    russBankAccount.withdraw(500.0)
-    russBankAccount.displayTransactionHistory()
+    println(sarahBankAccount.accountHolder + " remaining balance: $" + sarahBankAccount.acctBalance())
+    sarahBankAccount.deposit(100.00)
+    sarahBankAccount.withdraw(10.00)
+    sarahBankAccount.deposit(300.00)
+    sarahBankAccount.displayTransactionHistory()
 
-    println(russBankAccount.accountHolder + " remaining balance: $" + russBankAccount.balance)
+    println(sarahBankAccount.accountHolder + " remaining balance: $" + sarahBankAccount.acctBalance())
 }

@@ -27,4 +27,8 @@ class BankAccount(var accountHolder: String,
 
         }
     }
+
+    fun acctBalance() : Double{
+        return balance
+    }
 }
